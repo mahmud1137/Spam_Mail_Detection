@@ -1,1 +1,35 @@
-The experiment demonstrated highly effective spam classification across multiple models, all benefiting from rigorous text preprocessing and SMOTE balancing. Linear SVC and Logistic Regression performed the best, achieving accuracies of approximately 98.6% and 98.6% respectively. Both of these models achieved a macro F1-score of 0.98, indicating excellent balance in detecting both ham and spam classes. Naive Bayes, while fast, showed the lowest performance at 95.1% accuracy, struggling slightly more with false negatives (20 instances) and false positives (30 instances). Random Forest also performed exceptionally well at 98.3% accuracy but did not outperform the linear models. With more time, I would experiment with transformer-based models like BERT or explore hyperparameter tuning for the top-performing SVM and Logistic Regression models to further minimize false positives.
+Spam Mail Detection:
+
+This repository contains a machine learning pipeline for classifying text messages and emails as either 'spam' or 'ham' (legitimate). The project explores various natural language processing (NLP) techniques and machine learning models to effectively identify spam while handling class imbalance.
+
+Project Overview:
+
+Spam detection is a classic text classification problem. In this project, we process raw text data, extract features using TF-IDF, balance the dataset using SMOTE, and evaluate four different classification algorithms to determine the most effective approach.
+
+Repository Structure:
+
+experiment.ipynb: The main Jupyter Notebook containing the code for data cleaning, feature engineering, model training, and evaluation.
+literature_review.md: Summaries of academic papers related to spam filtering, text classification, and handling imbalanced datasets.
+methodology.md: A detailed breakdown of the research question, data processing steps, and evaluation metrics.
+
+Methodology:
+
+Data Preprocessing: The text data undergoes rigorous cleaning, which includes lowercasing, and the removal of punctuation, stopwords, numbers, URLs, and email addresses. The remaining text is lemmatized using NLTK's WordNetLemmatizer.
+
+Feature Engineering: 
+
+The cleaned text is converted into a numerical matrix using TfidfVectorizer (capped at 5,000 max features).
+
+Class Balancing:
+
+To prevent models from biasing toward the majority 'ham' class, Synthetic Minority Over-sampling Technique (SMOTE) is applied to the training set.
+
+Models Trained:
+
+Multinomial Naive Bayes, Logistic Regression, Random Forest Classifier, Linear Support Vector Classifier (LinearSVC)
+
+Results:
+
+All models benefited significantly from the text preprocessing and SMOTE balancing.
+Top Performers: LinearSVC and Logistic Regression achieved the highest accuracy (both 98.6%) and balanced macro F1-scores of 0.98.
+Other Models Random Forest achieved an accuracy of 98.3%, while Multinomial Naive Bayes yielded an accuracy of 95.1%, struggling slightly more with false positives.
