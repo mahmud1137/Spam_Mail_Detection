@@ -104,8 +104,8 @@ This project compared four machine-learning classifiers for email spam detection
 
 ## References
 
-[1] S. J. Delany, M. Buckley, and D. Greene, “SMS spam filtering: Methods and data,” *Expert Systems with Applications*, vol. 39, no. 10, pp. 9899–9908, 2012. https://doi.org/10.1016/j.eswa.2012.02.053
+[1] Dada, E. G., Bassi, J. S., Chiroma, H., Abdulhamid, S. M., Adetunmbi, A. O., & Ajibuwa, O. E. (2019). Machine learning for email spam filtering: review, approaches and open research problems. Heliyon, 5, e01802. https://doi.org/10.1016/j.heliyon.2019.e01802
 
-[2] F. A. Guzella and W. M. Caminhas, “A review of machine learning approaches to spam filtering,” *Expert Systems with Applications*, vol. 36, no. 7, pp. 10206–10222, 2009. https://doi.org/10.1016/j.eswa.2009.02.037
+[2] Khurana, A., & Verma, O. P. (2023). Optimal Feature Selection for Imbalanced Text Classification. IEEE Transactions on Artificial Intelligence, 4, 135–147. https://doi.org/10.1109/tai.2022.3144651
 
-[3] P. K. Roy, J. P. Singh, and S. Banerjee, “Deep learning to filter SMS Spam,” *Future Generation Computer Systems*, vol. 102, pp. 524–533, 2020. https://doi.org/10.1016/j.future.2019.09.001
+[3] Prasad, P. (2024). Exploring Machine Learning Algorithms for Email Spam Filtering. SPAST Reports, 1. https://doi.org/10.69848/sreports.v1i6.5079
